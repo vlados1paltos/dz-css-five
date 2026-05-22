@@ -1,0 +1,306 @@
+<!-- 
+(Основное задание 1)
+На базе уже сделанного мной сайта(надеюсь это не проблема) начинаю делать задание по CSS.
+Здесь присутствуют необходимые элементы вида div, section и header.
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grey</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+
+            <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                    Логотип
+                </a>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#hwa" class="header__nav-link">О нас</a></li>
+                    <li class="header__nav-item"><a href="#nws" class="header__nav-link">Новости</a></li>
+                    <li class="header__nav-item"><a href="#stk" class="header__nav-link">Акции</a></li>
+                    <li class="header__nav-item"><a href="#prm" class="header__nav-link">Промо</a></li>
+                    <li class="header__nav-item"><a href="#scm" class="header__nav-link">Социальные сети</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__search">
+                <form action="#" method="get" class="header__search-form">
+
+                    <label for="site-search" class="visually-hidden">
+                        Поиск по сайту
+                    </label>
+
+                    <input 
+                    id="site-search"
+                    type="search" 
+                    name="search"
+                    placeholder="Поиск по сайту..."
+                    class="header__search-input"
+                    >
+
+                    <button type="submit" class="header__search-button">Найти</button>
+
+                </form>
+            </div>
+
+            <div class="z-index-demo__container">
+
+                <div class="z-index-demo__box z-index-demo__box--back">
+                    z-index: 1
+                </div>
+
+                <div class="z-index-demo__box z-index-demo__box--front">
+                    z-index: 2
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="hwa" class="hero">
+            <div class="container hero__container">
+
+                <div class="hero__content">
+
+                    <h1 class="hero__title">
+                        О нас
+                    </h1>
+
+                    <p class="hero__text">
+                        Таким образом, разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение переосмысления внешнеэкономических политик. 
+                        А ещё интерактивные прототипы формируют глобальную экономическую сеть и при этом — 
+                        смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. 
+                        Господа, семантический разбор внешних противодействий влечет за собой процесс внедрения и модернизации благоприятных перспектив. 
+                        Как принято считать, непосредственные участники технического прогресса разоблачены. 
+                        Таким образом, существующая теория требует анализа соответствующих условий активизации.
+                    </p>
+
+                    <!-- <button type="button" class="hero__button">Присоединиться</button> -->
+
+                </div>
+
+                <div class="hero__image">
+                    <img 
+                    src="./assets/image/seryy_london.jpg" 
+                    alt="Серый Лондон"
+                    width="1920"
+                    height="1080"
+                    >
+                </div>
+
+                <p class="hero__float-text">
+                    Значимость этих проблем настолько очевидна, что экономическая повестка сегодняшнего дня требует от нас анализа поставленных обществом задач.
+                    Как уже неоднократно упомянуто, интерактивные прототипы объединены в целые кластеры себе подобных.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="nws" class="news">
+            <div class="container news__container">
+
+                <article class="news__article">
+
+                    <h2 class="news__article-title">
+                        Новости
+                    </h2>
+
+                    <p class="news__article-text">
+                        Кстати, диаграммы связей разоблачены. Современные технологии достигли такого уровня, 
+                        что убеждённость некоторых оппонентов позволяет выполнить важные задания по разработке системы обучения кадров, соответствующей насущным потребностям. 
+                        С другой стороны, начало повседневной работы по формированию позиции требует определения и уточнения поэтапного и последовательного развития общества. 
+                        Но консультация с широким активом влечет за собой процесс внедрения и модернизации экспериментов, поражающих по своей масштабности и грандиозности. 
+                        Однозначно, непосредственные участники технического прогресса описаны максимально подробно. Идейные соображения высшего порядка, 
+                        а также новая модель организационной деятельности не оставляет шанса для существующих финансовых и административных условий. 
+                        В своём стремлении улучшить пользовательский опыт мы упускаем, что активно развивающиеся страны третьего мира подвергнуты целой серии независимых исследований.
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+        <section id="stk" class="stock">
+            <div class="container stock__container">
+
+                 <h2 class="stock__title">
+                    Акции
+                </h2>
+
+                <p class="stock__text">
+                    Значимость этих проблем настолько очевидна, что экономическая повестка сегодняшнего дня требует от нас анализа поставленных обществом задач. 
+                    Как уже неоднократно упомянуто, интерактивные прототипы объединены в целые кластеры себе подобных. 
+                    Лишь независимые государства, инициированные исключительно синтетически, преданы социально-демократической анафеме. Картельные сговоры не допускают ситуации, 
+                    при которой представители современных социальных резервов формируют глобальную экономическую сеть и при этом — ограничены исключительно образом мышления. 
+                    В своём стремлении улучшить пользовательский опыт мы упускаем, что сделанные на базе интернет-аналитики выводы являются только методом политического участия и обнародованы.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="join">
+            <div class="container join__container">
+
+                <h2 class="join__title">
+                    Присоединиться
+                </h2>
+
+                <p class="join__text">
+                    Значимость этих проблем настолько очевидна, что экономическая повестка сегодняшнего дня требует от нас анализа поставленных обществом задач. 
+                    Как уже неоднократно упомянуто, интерактивные прототипы объединены в целые кластеры себе подобных.
+                </p>
+
+                <p class="join__text">
+                    Значимость этих проблем настолько очевидна, что экономическая повестка сегодняшнего дня требует от нас анализа поставленных обществом задач. 
+                    Как уже неоднократно упомянуто, интерактивные прототипы объединены в целые кластеры себе подобных.
+                </p>
+
+                <p class="join__text">
+                    Значимость этих проблем настолько очевидна, что экономическая повестка сегодняшнего дня требует от нас анализа поставленных обществом задач. 
+                    Как уже неоднократно упомянуто, интерактивные прототипы объединены в целые кластеры себе подобных.
+                </p>
+
+                <p class="join__text">
+                    Значимость этих проблем настолько очевидна, что экономическая повестка сегодняшнего дня требует от нас анализа поставленных обществом задач. 
+                    Как уже неоднократно упомянуто, интерактивные прототипы объединены в целые кластеры себе подобных.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="sticky">
+
+            <div class="sticky__demo">
+                Значимость этих проблем настолько очевидна, что экономическая повестка сегодняшнего дня требует от нас анализа поставленных обществом задач. 
+                Как уже неоднократно упомянуто, интерактивные прототипы объединены в целые кластеры себе подобных.
+            </div>
+
+            <h2 class="sticky__title">
+                Заголовок
+            </h2>
+
+            <p class="sticky__text">Текст</p>
+            <p class="sticky__text">Текст</p>
+            <p class="sticky__text">Текст</p>
+            <p class="sticky__text">Текст</p>
+            <p class="sticky__text">Текст</p>
+
+        </section>
+
+        <section class="overflow-demo">
+            <div class="container overflow-demo__container">
+
+                <div class="overflow-demo__box overflow-demo__box--scroll">
+                    <h2 class="overflow-demo__title">overflow: scroll</h2>
+                    <p class="overflow-demo__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Asperiores quidem pariatur officiis, quis aut laborum repudiandae nesciunt error ducimus distinctio!
+                    </p>
+                </div>
+
+                <div class="overflow-demo__box overflow-demo__box--hidden">
+                    <h2 class="overflow-demo__title">overflow: hidden</h2>
+                    <p class="overflow-demo__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Adipisci laudantium aperiam veritatis beatae reiciendis possimus error, 
+                        perspiciatis provident tempora sit eligendi, enim quod doloremque consequatur!
+                    </p>
+                </div>
+
+                <div class="overflow-demo__box overflow-demo__box--auto">
+                    <h2 class="overflow-demo__title">overflow: auto</h2>
+                    <p class="overflow-demo__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Provident sit totam est esse quisquam vitae modi facere ad, 
+                    accusamus vero non veritatis odit adipisci doloremque.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="margin-collapse-demo">
+            <div class="container margin-collapse-demo__container">
+
+                <div class="margin-collapse-demo__box margin-collapse-demo__box--first">
+                    Первый блок: margin-bottom: 50px
+                </div>
+
+                <div class="margin-collapse-demo__box margin-collapse-demo__box--second">
+                    Второй блок: margin-top: 50px
+                </div>
+
+            </div>
+        </section>
+
+        <section class="animation-demo">
+            <div class="container animation-demo__container">
+
+                <div class="animation-demo__box">
+                    Анимация движения
+                </div>
+
+            </div>
+        </section>
+
+        <section id="prm" class="promo">
+            <div class="container promo__container">
+
+                <h2 class="promo__title">
+                    Промо
+                </h2>
+
+                <p class="promo__text">
+                    В своём стремлении улучшить пользовательский опыт мы упускаем, 
+                    что сделанные на базе интернет-аналитики выводы являются только методом политического участия и обнародованы.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer__container">
+
+            <div class="footer__download">
+                <button type="button" class="footer__download-button">Загрузить приложение</button>
+            </div>
+
+            <div id="scm" class="footer__social">
+                <ul class="footer__social-list">
+                    <li class="footer__social-item"><a href="#" class="footer__social-link">VK</a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link">X</a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link">Discord</a></li>
+                    <li class="footer__social-item"><a href="#" class="footer__social-link">YouTube</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__license">
+                <small class="footer__license-text">
+                    © 2020-2026, компания SixSeven, Inc., наш продукт и все связанные с ними логотипы являются товарными знаками, 
+                    знаками обслуживания и/или зарегистрированными товарными знаками SixSeven, Inc.
+                </small>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
